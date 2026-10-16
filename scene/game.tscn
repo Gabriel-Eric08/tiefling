@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://j4u2qfnksjoc"]
+
+[ext_resource type="PackedScene" uid="uid://saf0vpyg5dty" path="res://entities/higashi.tscn" id="1_5kiuu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3c2fn"]
+size = Vector2(254.75, 29)
+
+[node name="Game" type="Node2D" unique_id=7598871]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1628966783]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=739888902]
+position = Vector2(107, 97)
+shape = SubResource("RectangleShape2D_3c2fn")
+
+[node name="Higashi" parent="." unique_id=1195833738 instance=ExtResource("1_5kiuu")]
+position = Vector2(25, 37)
